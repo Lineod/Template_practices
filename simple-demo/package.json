@@ -1,13 +1,8 @@
 {
-  "name": "starter",
-  "description": "Include Bootstrap CSS and JS via the jsDelivr CDN.",
-  "version": "0.0.0",
+  "name": "simple-demo",
   "private": true,
-  "repository": "twbs/examples",
-  "license": "MIT",
-  "stackblitz": {
-    "startCommand": "npm start"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "start": "sirv --dev --no-clear --port 3000",
     "dev": "vite",
