@@ -3,18 +3,25 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml"
+    href="https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/icon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="\src\styles.css">
+  <link rel="stylesheet" href="/src/style.scss">
   <title>simple-demo</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <header id="hero">
+    <h1 title="I'm a tooltip">Hello, World!</h1>
+    <!-- <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3> -->
+    <p>This site is <mark>(probabaly)</mark> built with HTML, SCSS, Javascript, Bootstrap & Vite.</p>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Contents...</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,10 +29,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="link.html">Link</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -52,9 +59,31 @@
       </div>
     </div>
   </nav>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+  <!-- <div id="app"></div> -->
+  <!-- <script type="module" src="/src/main.js"></script> -->
+  <footer>
+    <p>Built with ❤️ learning how to write wiki pages.</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var navbarCollapse = document.querySelector('#navbarSupportedContent');
+
+      if (navbarToggler && navbarCollapse) {
+        // 当折叠区域完全隐藏后，移除按钮焦点
+        navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+          navbarToggler.blur();
+        });
+
+        // 当折叠区域完全显示后，也可以选择移除焦点
+        navbarCollapse.addEventListener('shown.bs.collapse', function () {
+          // 如果你希望在展开后也移除焦点，可以取消注释下面这行
+          // navbarToggler.blur();
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
