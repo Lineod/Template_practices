@@ -3,44 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <link rel="canonical" href="/Template_practices/" />
-    <script>
+    <title>Redirecting</title>
+    <script type="text/javascript">
+        // 单页应用重定向
         // 获取当前路径
-        const path = window.location.pathname;
-        const search = window.location.search;
-        const hash = window.location.hash;
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
 
-        // 如果是项目内的路径，重定向到 index.html
-        if (path.includes('/Template_practices/')) {
-            // 提取路由路径（去掉项目名前缀）
-            const route = path.replace('/Template_practices/', '');
+        // 保存原始路径到 sessionStorage
+        sessionStorage.setItem('redirect', path + search + hash);
 
-            // 构建重定向 URL
-            let redirectUrl = '/Template_practices/';
-
-            // 如果有路由路径，添加到 hash
-            if (route && route !== 'index.html') {
-                redirectUrl += `#/${route}`;
-            }
-
-            // 保留查询参数
-            if (search) {
-                redirectUrl += search;
-            }
-
-            // 保留原始 hash（如果有）
-            if (hash && !hash.startsWith('#/')) {
-                redirectUrl += hash;
-            }
-
-            window.location.href = redirectUrl;
-        }
+        // 重定向到首页
+        window.location.replace('/Template_practices/');
     </script>
 </head>
 
 <body>
-    <p>If you are not redirected automatically, follow this <a href="/Template_practices/">link</a>.</p>
+    <noscript>
+        <p>JavaScript is required for this application. Please enable JavaScript and refresh the page.</p>
+        <p>If you're seeing this page, you may have accessed a direct link.
+            <a href="/Template_practices/">Click here to go to the homepage</a>.
+        </p>
+    </noscript>
 </body>
 
 </html>
