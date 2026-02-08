@@ -27,7 +27,9 @@ try {
     $tempDeployDir = Join-Path $env:TEMP "gh-pages-deploy-$(Get-Date -Format 'yyyyMMdd_HHmmss')"
     New-Item -ItemType Directory -Path $tempDeployDir -Force | Out-Null
     Write-Host "Using temp directory: $tempDeployDir"
-    
+    if (-not (Test-Path ".nojekyll")) {
+    New-Item -ItemType File -Name ".nojekyll" -Force
+}
     # Step 3: Clone the repository to temp directory (ONLY gh-pages branch)
     Write-Host "`nStep 3: Cloning gh-pages branch..." -ForegroundColor Yellow
     

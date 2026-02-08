@@ -12,8 +12,13 @@ export default defineConfig({
         sourcemap: true,
         copyPublicDir: true,
         rollupOptions: {
-            output: {
-                manualChunks: undefined,
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                about: resolve(__dirname, 'about.html'),
+                news: resolve(__dirname, 'link.html'),
+                ref_thx: resolve(__dirname, 'ref_thk.html'),
+                targets: resolve(__dirname, 'targets.html')
+                // 添加您所有的 HTML 文件
             }
         },
 
@@ -31,7 +36,7 @@ export default defineConfig({
         // 开发服务器配置
         server: {
             port: 3000,
-            open: true,
+            open: '/index.html',
             hot: true
         }
     }
