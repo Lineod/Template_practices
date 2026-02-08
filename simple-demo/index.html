@@ -13,12 +13,14 @@
 </head>
 
 <body>
-  <header id="hero">
-    <h1><b>Hello, World!</b></h1>
-    <!-- <h2>This is heading 2</h2>
+  <div id="hero">
+    <header>
+      <h1><b>Hello, World!</b></h1>
+      <!-- <h2>This is heading 2</h2>
     <h3>This is heading 3</h3> -->
-    <p>This site is <mark>(probably)</mark> built with HTML, SCSS, Javascript, Bootstrap, Vite & Figma.</p>
-  </header>
+      <p>This site is <mark>(probably)</mark> built with HTML, SCSS, Javascript, Bootstrap, Vite & Figma.</p>
+    </header>
+  </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Contents...</a>
@@ -40,12 +42,12 @@
               More stories...
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Future targets</a></li>
-              <li><a class="dropdown-item" href="#">About me</a></li>
+              <li><a class="dropdown-item" href="targets.html">Future targets</a></li>
+              <li><a class="dropdown-item" href="about.html">About me</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">References and Acknowledgements</a></li>
+              <li><a class="dropdown-item" href="ref_thk.html">References and Acknowledgements</a></li>
             </ul>
           </li>
           <!-- <li class="nav-item">
@@ -61,9 +63,10 @@
   </nav>
   <main>
     <section>
-      <h2><b>Welcome to</b></h2><img src="https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/icon.png"
-        alt="flower-demo icon" title="I drew this with Figma!">
-      alt="W3Schools.com">
+      <div class="title_img">
+        <h2><b>Welcome to <img src="https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/icon.png"
+              alt="flower-demo icon" title="I drew this with Figma!"> !</b></h2>
+      </div>
       <p>This is a site for me to display what I've learnt <span style="color: #058457;">these days</span>.</p>
       <div class="chat_like">
         <button id="moveDialog">What do you mean by <i>these days?</i></button>
@@ -82,9 +85,10 @@
     </section>
     <section class="animated-section">
       <h2><b>But before that...</b></h2>
-      <p>You can get a pinch of knowledge about HTML, SCSS, Javascript, Bootstrap, Vite and Figma. Special thanks to
-        <span style="color:#506cff;"><i>Deepseek</i></span>
-        for helping me generate these blocks and filling the blank!
+      <p>You can get a pinch of knowledge about HTML, SCSS, Javascript, Bootstrap, Vite and Figma.
+        <small>Special thanks to
+          <span style="color:#506cff;"><i>Deepseek</i></span>
+          for helping me generate these blocks and filling the blank!</small>
       </p>
       <span
         style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
@@ -92,7 +96,7 @@
     </section>
     <div class="articles-container">
       <!-- Article 1: HTML -->
-      <a href="article-detail.html#html-guide" class="article-card" role="article">
+      <a href="link.html#html_news" class="article-card" role="article">
         <div class="article-header">
           <div class="article-logo">
             <div class="logo-container logo-html">
@@ -136,7 +140,7 @@
       </a>
 
       <!-- Article 2: SCSS -->
-      <a href="article-detail.html#html-guide" class="article-card" role="article">
+      <a href="link.html#scss_news" class="article-card" role="article">
         <div class="article-header">
           <div class="article-logo">
             <div class="logo-container logo-scss">
@@ -179,7 +183,7 @@
       </a>
 
       <!-- Article 3: JavaScript -->
-      <a href="article-detail.html#html-guide" class="article-card" role="article">
+      <a href="link.html#jsc_news" class="article-card" role="article">
         <div class="article-header">
           <div class="article-logo">
             <div class="logo-container logo-js">
@@ -223,7 +227,7 @@
       </a>
 
       <!-- Article 4: Bootstrap -->
-      <a href="article-detail.html#html-guide" class="article-card" role="article">
+      <a href="link.html#bs_news" class="article-card" role="article">
         <div class="article-header">
           <div class="article-logo">
             <div class="logo-container logo-bootstrap">
@@ -266,7 +270,7 @@
       </a>
 
       <!-- Article 5: Vite -->
-      <a href="article-detail.html#html-guide" class="article-card" role="article">
+      <a href="link.html#vite_news" class="article-card" role="article">
         <div class="article-header">
           <div class="article-logo">
             <div class="logo-container logo-vite">
@@ -309,7 +313,7 @@
       </a>
 
       <!-- Article 6: Figma -->
-      <a href="article-detail.html#html-guide" class="article-card" role="article">
+      <a href="link.html#figma_news" class="article-card" role="article">
         <div class="article-header">
           <div class="article-logo">
             <div class="logo-container logo-figma">
