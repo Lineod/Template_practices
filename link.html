@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml"
+        href="https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/icon.svg?t=20260208" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <title>Another Page</title>
+    <base href="/Template_practices/">
+  <script type="module" crossorigin src="/Template_practices/assets/main-CXuJo5Xa.js"></script>
+  <link rel="stylesheet" crossorigin href="/Template_practices/assets/main-CZXhhjxK.css">
+</head>
+
+<body>
+    <div class="simplerHero simplerHero--news">
+        <header class="simplerHero__header">
+            <h1>News:&nbsp;&nbsp;</h1>
+            <p>I planned to put my discoveries in the tools I used these days here, but time is limited.</p>
+        </header>
+    </div>
+    <!-- 因不会调整active而只能每次手动nav。 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Contents...</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="link.html">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More stories...
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="targets.html">Future targets</a></li>
+                            <li><a class="dropdown-item" href="about.html">About me</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="ref_thk.html">References and Acknowledgements</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+                </ul>
+                <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+            </div>
+        </div>
+    </nav>
+    <div class="page-header">
+        <div class="container">
+            <h1>Frontend Technology Deep Dive</h1>
+            <p>Six expanded articles on modern frontend development technologies covering HTML5, SCSS, JavaScript,
+                Bootstrap, Vite, and Figma</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="nav-links">
+            <a href="#html_news" class="nav-link">HTML5</a>
+            <a href="#scss_news" class="nav-link">SCSS</a>
+            <a href="#jsc_news" class="nav-link">JavaScript</a>
+            <a href="#bs_news" class="nav-link">Bootstrap</a>
+            <a href="#vite_news" class="nav-link">Vite</a>
+            <a href="#figma_news" class="nav-link">Figma</a>
+        </div>
+
+        <!-- Article 1: HTML -->
+        <article class="article-expanded" id="html_news">
+            <div class="article-header">
+                <div class="article-logo">
+                    <div class="logo-container logo-html">HTML</div>
+                </div>
+                <div class="article-title">
+                    <h2>Modern HTML5: Semantic Markup & Accessibility Best Practices</h2>
+                    <div class="article-meta">
+                        <span><i class="fas fa-user"></i> Mark Thompson</span>
+                        <span><i class="fas fa-clock"></i> 7 min read</span>
+                        <span><i class="fas fa-calendar"></i> October 15, 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <p>HTML5 introduced powerful semantic elements that significantly improve both SEO and accessibility. In
+                    this expanded article, we'll explore how to leverage these new features to build modern, accessible
+                    web structures.</p>
+
+                <h3>Core Benefits of Semantic Elements</h3>
+                <p>HTML5 semantic tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                    <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> not only
+                    make code more readable and maintainable but also provide clear document structure for search
+                    engines and assistive technologies. Research shows that websites using semantic HTML improve their
+                    search engine ranking by an average of 15%.
+                </p>
+
+                <h3>Deep Dive into ARIA Attributes</h3>
+                <p>WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications) attributes are
+                    crucial tools for enhancing web accessibility. We'll discuss the following ARIA attributes in
+                    detail:</p>
+                <ul>
+                    <li><strong>Role attribute</strong>: Defines element types like <code>role="navigation"</code>,
+                        <code>role="main"</code>, etc.
+                    </li>
+                    <li><strong>aria-label and aria-labelledby</strong>: Provide accessible names for elements</li>
+                    <li><strong>aria-describedby</strong>: Offers more detailed element descriptions</li>
+                    <li><strong>aria-live</strong>: Handles dynamic content updates to ensure screen readers notify
+                        users promptly</li>
+                </ul>
+
+                <h3>Responsive Images Best Practices</h3>
+                <p>HTML5's <code>srcset</code> and <code>sizes</code> attributes allow us to provide optimized images
+                    for different devices and screen sizes. We'll demonstrate implementation through practical examples:
+                </p>
+                <ol>
+                    <li>Providing different resolution images based on device pixel ratio (DPR)</li>
+                    <li>Loading different sized images based on viewport width</li>
+                    <li>Art direction using the <code>&lt;picture&gt;</code> element</li>
+                    <li>Using modern image formats like WebP for performance improvement</li>
+                </ol>
+
+                <h3>Form Validation Techniques</h3>
+                <p>HTML5's built-in form validation reduces JavaScript dependency while improving user experience. We'll
+                    explore:</p>
+                <ul>
+                    <li>Native input types: <code>email</code>, <code>url</code>, <code>tel</code>, <code>number</code>,
+                        etc.</li>
+                    <li>Validation attributes: <code>required</code>, <code>pattern</code>, <code>min</code>,
+                        <code>max</code>, etc.
+                    </li>
+                    <li>Custom validation messages and styling</li>
+                    <li>JavaScript integration with Constraint Validation API</li>
+                </ul>
+            </div>
+
+            <div class="tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">Semantic</span>
+                <span class="tag">Accessibility</span>
+                <span class="tag">Web Standards</span>
+                <span class="tag">SEO</span>
+                <span class="tag">Responsive Design</span>
+            </div>
+
+            <div class="article-footer">
+                <div class="author-details">
+                    <div class="author-avatar avatar-html">M</div>
+                    <div class="author-info">
+                        <h4>Mark Thompson</h4>
+                        <span>Frontend Architect | 12 years Web Development Experience</span>
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <button class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                    <button class="action-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2: SCSS -->
+        <article class="article-expanded" id="scss_news">
+            <div class="article-header">
+                <div class="article-logo">
+                    <div class="logo-container logo-scss">SCSS</div>
+                </div>
+                <div class="article-title">
+                    <h2>Advanced SCSS: Mixins, Functions & Architecture Patterns</h2>
+                    <div class="article-meta">
+                        <span><i class="fas fa-user"></i> Sarah Chen</span>
+                        <span><i class="fas fa-clock"></i> 9 min read</span>
+                        <span><i class="fas fa-calendar"></i> November 3, 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <p>Sass/SCSS transforms CSS into a powerful programming language. In this expanded article, we'll
+                    explore the advanced features of SCSS and how to build maintainable, scalable CSS architecture.</p>
+
+                <h3>SCSS Core Concepts</h3>
+                <p>SCSS dramatically improves CSS maintainability through variables, nesting, mixins, and inheritance.
+                    We'll discuss best practices for these features:</p>
+                <ul>
+                    <li><strong>Variable management</strong>: Create a design tokens system to centrally manage colors,
+                        spacing, fonts, etc.</li>
+                    <li><strong>Intelligent nesting</strong>: Avoid specificity issues from over-nesting, keeping
+                        selectors flat</li>
+                    <li><strong>Partial files</strong>: Modularize SCSS structure for better code organization</li>
+                    <li><strong>Placeholder selectors</strong>: Use <code>%</code> to create extendable style base
+                        classes</li>
+                </ul>
+
+                <h3>Advanced Mixins and Functions</h3>
+                <p>The true power of SCSS lies in its programming capabilities. We'll create practical mixins and
+                    functions:</p>
+                <ol>
+                    <li><strong>Responsive mixins</strong>: Simplify media queries and create breakpoint systems</li>
+                    <li><strong>Animation mixins</strong>: Parameterize keyframe animations for reusable animation
+                        libraries</li>
+                    <li><strong>Theme mixins</strong>: Build style systems that support multiple themes</li>
+                    <li><strong>Utility functions</strong>: Create practical functions for color manipulation, unit
+                        conversion, mathematical calculations, etc.</li>
+                </ol>
+
+                <h3>BEM Methodology and SCSS Integration</h3>
+                <p>BEM (Block, Element, Modifier) is a popular CSS naming methodology. We'll demonstrate how to combine
+                    BEM with SCSS:</p>
+                <ul>
+                    <li>Simplify BEM syntax using SCSS nesting</li>
+                    <li>Create BEM helper mixins to reduce repetitive code</li>
+                    <li>Handle state changes for BEM modifiers</li>
+                    <li>Build extensible BEM component libraries</li>
+                </ul>
+
+                <h3>CSS Architecture for Large Projects</h3>
+                <p>For enterprise-level projects, good CSS architecture is crucial. We'll introduce ITCSS (Inverted
+                    Triangle CSS) and the 7-1 pattern:</p>
+                <ol>
+                    <li><strong>Settings layer</strong>: Global variables, configuration</li>
+                    <li><strong>Tools layer</strong>: Mixins and functions</li>
+                    <li><strong>Generic layer</strong>: Reset styles, box model rules</li>
+                    <li><strong>Elements layer</strong>: Raw HTML element styling</li>
+                    <li><strong>Objects layer</strong>: Non-styling design patterns like layout classes</li>
+                    <li><strong>Components layer</strong>: Specific UI component styling</li>
+                    <li><strong>Utilities layer</strong>: Helper classes, override styles</li>
+                </ol>
+            </div>
+
+            <div class="tags">
+                <span class="tag">SCSS</span>
+                <span class="tag">CSS Preprocessor</span>
+                <span class="tag">Styling</span>
+                <span class="tag">BEM</span>
+                <span class="tag">CSS Architecture</span>
+                <span class="tag">Frontend Tools</span>
+            </div>
+
+            <div class="article-footer">
+                <div class="author-details">
+                    <div class="author-avatar avatar-scss">S</div>
+                    <div class="author-info">
+                        <h4>Sarah Chen</h4>
+                        <span>UI/UX Developer | Specializing in Design Systems</span>
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <button class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                    <button class="action-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 3: JavaScript -->
+        <article class="article-expanded" id="jsc_news">
+            <div class="article-header">
+                <div class="article-logo">
+                    <div class="logo-container logo-js">JS</div>
+                </div>
+                <div class="article-title">
+                    <h2>ES6+ JavaScript: Modern Features & Performance Optimization</h2>
+                    <div class="article-meta">
+                        <span><i class="fas fa-user"></i> Alex Rivera</span>
+                        <span><i class="fas fa-clock"></i> 11 min read</span>
+                        <span><i class="fas fa-calendar"></i> November 22, 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <p>JavaScript has undergone revolutionary changes through ES6+. This article delves into modern
+                    JavaScript features and provides practical performance optimization strategies to help you write
+                    efficient, maintainable code.</p>
+
+                <h3>Deep Dive into ES6+ Core Features</h3>
+                <p>Modern JavaScript has introduced many game-changing features:</p>
+                <ul>
+                    <li><strong>Arrow functions</strong>: Concise syntax and lexical <code>this</code> binding</li>
+                    <li><strong>Destructuring assignment</strong>: Elegant way to extract data from arrays and objects
+                    </li>
+                    <li><strong>Asynchronous programming</strong>: How <code>async/await</code> simplifies Promise
+                        chains</li>
+                    <li><strong>Module system</strong>: Differences between ES6 modules and CommonJS with best practices
+                    </li>
+                    <li><strong>Optional chaining</strong>: Safe access to nested object properties</li>
+                    <li><strong>Nullish coalescing operator</strong>: More precise default value setting</li>
+                </ul>
+
+                <h3>Memory Management and Performance Optimization</h3>
+                <p>JavaScript performance optimization involves not only execution speed but also memory usage
+                    efficiency:</p>
+                <ol>
+                    <li><strong>Garbage collection mechanism</strong>: Understanding V8 engine's mark-and-sweep and
+                        generational collection strategies</li>
+                    <li><strong>Memory leak detection</strong>: Common memory leak patterns and Chrome DevTools
+                        debugging techniques</li>
+                    <li><strong>Event loop optimization</strong>: Execution order of microtasks and macrotasks and their
+                        performance impact</li>
+                    <li><strong>Function throttling and debouncing</strong>: Optimization strategies for high-frequency
+                        event handling</li>
+                </ol>
+
+                <h3>Modern Debugging and Testing Techniques</h3>
+                <p>Developing high-quality JavaScript applications requires powerful debugging and testing tools:</p>
+                <ul>
+                    <li>Advanced Chrome DevTools features: Performance panel, Memory panel, Coverage tool</li>
+                    <li>Configuration and use of Source Maps</li>
+                    <li>Unit testing framework comparison: Jest vs Mocha vs Jasmine</li>
+                    <li>End-to-end testing: Cypress and Puppeteer in practice</li>
+                </ul>
+
+                <h3>Cross-Browser Compatibility Strategies</h3>
+                <p>Although modern browsers support most ES6+ features, compatibility with older browsers remains a
+                    requirement for enterprise applications:</p>
+                <ol>
+                    <li>Babel configuration best practices: Choosing presets and plugins</li>
+                    <li>Core-js and polyfill strategies</li>
+                    <li>Feature detection and progressive enhancement</li>
+                    <li>Browser target configuration in build tools</li>
+                </ol>
+            </div>
+
+            <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">ES6+</span>
+                <span class="tag">Performance</span>
+                <span class="tag">Frontend</span>
+                <span class="tag">Modern JS</span>
+                <span class="tag">Debugging</span>
+            </div>
+
+            <div class="article-footer">
+                <div class="author-details">
+                    <div class="author-avatar avatar-js">A</div>
+                    <div class="author-info">
+                        <h4>Alex Rivera</h4>
+                        <span>JavaScript Expert | Full Stack Developer</span>
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <button class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                    <button class="action-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 4: Bootstrap -->
+        <article class="article-expanded" id="bs_news">
+            <div class="article-header">
+                <div class="article-logo">
+                    <div class="logo-container logo-bootstrap">BS</div>
+                </div>
+                <div class="article-title">
+                    <h2>Bootstrap 5: Customization & Advanced Component Techniques</h2>
+                    <div class="article-meta">
+                        <span><i class="fas fa-user"></i> James Wilson</span>
+                        <span><i class="fas fa-clock"></i> 8 min read</span>
+                        <span><i class="fas fa-calendar"></i> December 5, 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <p>Bootstrap 5 removed jQuery dependency and brought significant improvements. This article explores how
+                    to deeply customize Bootstrap and leverage its advanced components to build unique design systems.
+                </p>
+
+                <h3>Bootstrap 5 Architecture Analysis</h3>
+                <p>Bootstrap 5 adopts a modular architecture, making it lighter and easier to customize:</p>
+                <ul>
+                    <li><strong>Sass variable overrides</strong>: Deep understanding of Bootstrap's variable system to
+                        customize colors, spacing, fonts, etc.</li>
+                    <li><strong>Modular imports</strong>: Import components as needed to reduce bundle size</li>
+                    <li><strong>CSS custom properties</strong>: How Bootstrap 5 utilizes CSS variables for dynamic
+                        theming</li>
+                    <li><strong>Responsive breakpoint system</strong>: Customizing and extending default responsive
+                        breakpoints</li>
+                </ul>
+
+                <h3>Advanced Grid System Techniques</h3>
+                <p>Bootstrap's grid system is one of its core features. We'll explore advanced grid techniques:</p>
+                <ol>
+                    <li>Nested grids and complex layout implementation</li>
+                    <li>Advanced vertical and horizontal alignment techniques</li>
+                    <li>Strategic use of responsive display and hide classes</li>
+                    <li>Creating modern spacing systems using row and column gutters</li>
+                </ol>
+
+                <h3>Component Extension and Customization</h3>
+                <p>Bootstrap components provide a good foundation, but the real value lies in how to extend and
+                    customize them:</p>
+                <ul>
+                    <li><strong>Button component extension</strong>: Creating custom button variants, sizes, and states
+                    </li>
+                    <li><strong>Deep navigation component customization</strong>: Multiple implementation approaches for
+                        responsive navigation bars</li>
+                    <li><strong>Form component enhancement</strong>: Custom form controls, validation states, and
+                        layouts</li>
+                    <li><strong>Card component innovation</strong>: Leveraging cards to build rich content displays</li>
+                </ul>
+
+                <h3>Utility Classes and Dark Mode</h3>
+                <p>Bootstrap 5's utility classes and built-in dark mode support greatly improve development efficiency:
+                </p>
+                <ol>
+                    <li>Creative use of spacing, color, and typography utility classes</li>
+                    <li>Combination strategies for responsive utility classes</li>
+                    <li>Implementation principles and customization of dark mode</li>
+                    <li>Creating custom utility class extension systems</li>
+                </ol>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Bootstrap 5</span>
+                <span class="tag">CSS Framework</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">UI Components</span>
+                <span class="tag">Customization</span>
+                <span class="tag">Frontend Framework</span>
+            </div>
+
+            <div class="article-footer">
+                <div class="author-details">
+                    <div class="author-avatar avatar-bootstrap">J</div>
+                    <div class="author-info">
+                        <h4>James Wilson</h4>
+                        <span>Full Stack Developer | Bootstrap Expert</span>
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <button class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                    <button class="action-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 5: Vite -->
+        <article class="article-expanded" id="vite_news">
+            <div class="article-header">
+                <div class="article-logo">
+                    <div class="logo-container logo-vite">Vite</div>
+                </div>
+                <div class="article-title">
+                    <h2>Vite: Next-Generation Frontend Tooling & Build Optimization</h2>
+                    <div class="article-meta">
+                        <span><i class="fas fa-user"></i> Emma Davis</span>
+                        <span><i class="fas fa-clock"></i> 10 min read</span>
+                        <span><i class="fas fa-calendar"></i> January 12, 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <p>Vite has revolutionized frontend development with lightning-fast cold starts and instant Hot Module
+                    Replacement (HMR). This article explores Vite's core principles and advanced configuration
+                    techniques.</p>
+
+                <h3>Vite Architecture and Core Principles</h3>
+                <p>Vite's success stems from its innovative architectural design:</p>
+                <ul>
+                    <li><strong>Native ES Modules (ESM)</strong>: How Vite leverages browser-native ESM to improve
+                        development server performance</li>
+                    <li><strong>Pre-bundled dependencies</strong>: Mechanism of using esbuild to pre-bundle CommonJS/UMD
+                        dependencies</li>
+                    <li><strong>On-demand compilation</strong>: Strategy of compiling source files on request and its
+                        performance advantages</li>
+                    <li><strong>Hot Module Replacement (HMR)</strong>: Implementation principles and performance
+                        optimization of Vite's HMR</li>
+                </ul>
+
+                <h3>Comparative Analysis: Vite vs Webpack</h3>
+                <p>Understanding the differences between Vite and Webpack helps with correct technology selection:</p>
+                <table style="width:100%; border-collapse: collapse; margin: 1.5rem 0;">
+                    <thead>
+                        <tr style="background-color: #f0f7ff;">
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Feature</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Vite</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Webpack</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #eee;">Cold Start Time</td>
+                            <td style="padding: 10px; border: 1px solid #eee;">Milliseconds</td>
+                            <td style="padding: 10px; border: 1px solid #eee;">Several seconds to tens of seconds</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #eee;">HMR Speed</td>
+                            <td style="padding: 10px; border: 1px solid #eee;">Instant (within 50ms)</td>
+                            <td style="padding: 10px; border: 1px solid #eee;">Slower (depends on build)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #eee;">Configuration Complexity</td>
+                            <td style="padding: 10px; border: 1px solid #eee;">Low, works out of the box</td>
+                            <td style="padding: 10px; border: 1px solid #eee;">High, requires extensive configuration
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #eee;">Ecosystem</td>
+                            <td style="padding: 10px; border: 1px solid #eee;">Rapidly growing</td>
+                            <td style="padding: 10px; border: 1px solid #eee;">Mature and extensive</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Advanced Plugin Configuration and Optimization</h3>
+                <p>Vite's powerful functionality is implemented through its plugin system. We'll explore key plugins and
+                    optimization strategies:</p>
+                <ol>
+                    <li><strong>Vite plugin development</strong>: Creating custom plugins to extend Vite functionality
+                    </li>
+                    <li><strong>Performance optimization plugins</strong>: Using vite-plugin-compression,
+                        vite-plugin-imagemin, etc. to optimize output</li>
+                    <li><strong>Framework integration</strong>: Best practices for Vite with React, Vue, Svelte, and
+                        other frameworks</li>
+                    <li><strong>Environment variable management</strong>: Multi-environment configuration and security
+                        practices</li>
+                </ol>
+
+                <h3>Production Build Optimization Strategies</h3>
+                <p>Vite's production builds are equally powerful but require proper configuration for optimal
+                    performance:</p>
+                <ul>
+                    <li>Code splitting strategies: Balancing manual and automatic chunking</li>
+                    <li>Asset handling: Optimization of images, fonts, and other static resources</li>
+                    <li>Pre-rendering and Static Site Generation (SSG)</li>
+                    <li>Server-Side Rendering (SSR) configuration</li>
+                </ul>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Vite</span>
+                <span class="tag">Build Tool</span>
+                <span class="tag">Performance</span>
+                <span class="tag">Frontend</span>
+                <span class="tag">Development</span>
+                <span class="tag">Modern Frontend</span>
+            </div>
+
+            <div class="article-footer">
+                <div class="author-details">
+                    <div class="author-avatar avatar-vite">E</div>
+                    <div class="author-info">
+                        <h4>Emma Davis</h4>
+                        <span>Build Tools Specialist | Frontend Engineering Consultant</span>
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <button class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                    <button class="action-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 6: Figma -->
+        <article class="article-expanded" id="figma_news">
+            <div class="article-header">
+                <div class="article-logo">
+                    <div class="logo-container logo-figma">Figma</div>
+                </div>
+                <div class="article-title">
+                    <h2>Figma for Developers: Design Systems & Component Handoff</h2>
+                    <div class="article-meta">
+                        <span><i class="fas fa-user"></i> Lisa Park</span>
+                        <span><i class="fas fa-clock"></i> 6 min read</span>
+                        <span><i class="fas fa-calendar"></i> February 8, 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <p>Figma as a collaborative design tool has revolutionized the collaboration between design and
+                    development. This article explores how developers can efficiently utilize Figma from a developer's
+                    perspective.</p>
+
+                <h3>Figma Developer Workflow</h3>
+                <p>Understanding Figma's core features can help developers work more efficiently:</p>
+                <ul>
+                    <li><strong>Design inspection</strong>: Using Dev Mode to accurately obtain dimensions, spacing, and
+                        style values</li>
+                    <li><strong>Code extraction</strong>: Getting CSS, JSX, SwiftUI, and other code snippets directly
+                        from designs</li>
+                    <li><strong>Asset export</strong>: Batch exporting icons, images, and other resources, supporting
+                        multiple formats and resolutions</li>
+                    <li><strong>Design version management</strong>: Tracking design changes and understanding design
+                        decision evolution</li>
+                </ul>
+
+                <h3>Deep Integration with Design Systems</h3>
+                <p>Modern design systems are the cornerstone of design and development collaboration. Figma provides
+                    powerful tools in this area:</p>
+                <ol>
+                    <li><strong>Component library management</strong>: Creating and maintaining reusable UI component
+                        libraries</li>
+                    <li><strong>Variants</strong>: Managing different states and variations of components</li>
+                    <li><strong>Auto Layout</strong>: Creating responsive, adaptive components</li>
+                    <li><strong>Design tokens</strong>: Mapping design variables to code variables</li>
+                </ol>
+
+                <h3>Efficient Design Handoff Process</h3>
+                <p>Seamless handoff from design to development is key to project success:</p>
+                <ul>
+                    <li><strong>Handoff checklist</strong>: Ensuring designs contain all information needed for
+                        development</li>
+                    <li><strong>Interaction specifications</strong>: Adding interaction details, state transitions, and
+                        animation descriptions</li>
+                    <li><strong>Responsive breakpoints</strong>: Providing design specifications for different screen
+                        sizes</li>
+                    <li><strong>Accessibility design annotations</strong>: Marking ARIA attributes, focus order, and
+                        other accessibility requirements</li>
+                </ul>
+
+                <h3>Figma Plugin Development and Automation</h3>
+                <p>Figma's plugin ecosystem can greatly improve development efficiency:</p>
+                <ol>
+                    <li>Recommended development plugins: Content Reel, Unsplash, Iconify, etc.</li>
+                    <li>Automated workflows: Using Figma API to automatically generate design documentation</li>
+                    <li>Design and code synchronization: Automatically synchronizing design systems with code
+                        repositories</li>
+                    <li>Custom plugin development: Creating specialized tools using TypeScript and React</li>
+                </ol>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Figma</span>
+                <span class="tag">Design Systems</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Collaboration</span>
+                <span class="tag">Design Handoff</span>
+                <span class="tag">Developer Tools</span>
+            </div>
+
+            <div class="article-footer">
+                <div class="author-details">
+                    <div class="author-avatar avatar-figma">L</div>
+                    <div class="author-info">
+                        <h4>Lisa Park</h4>
+                        <span>Product Designer | Design Systems Expert</span>
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <button class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                    <button class="action-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up">↑</i>
+    </div>
+    <div id="feet"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            var navbarCollapse = document.querySelector('#navbarSupportedContent');
+
+            if (navbarToggler && navbarCollapse) {
+                // 当折叠区域完全隐藏后，移除按钮焦点
+                navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+                    navbarToggler.blur();
+                });
+
+                // 当折叠区域完全显示后，也可以选择移除焦点
+                navbarCollapse.addEventListener('shown.bs.collapse', function () {
+                    // 如果你希望在展开后也移除焦点，可以取消注释下面这行
+                    // navbarToggler.blur();
+                });
+            }
+        });
+
+        // Back to top functionality
+        document.getElementById('backToTop').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function () {
+            const backToTopBtn = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTopBtn.style.opacity = '1';
+                backToTopBtn.style.visibility = 'visible';
+            } else {
+                backToTopBtn.style.opacity = '0';
+                backToTopBtn.style.visibility = 'hidden';
+            }
+        });
+
+        // // Save button functionality
+        // document.querySelectorAll('.action-btn').forEach(button => {
+        //     if (button.textContent.includes('Save') || button.innerHTML.includes('bookmark')) {
+        //         button.addEventListener('click', function () {
+        //             const articleTitle = this.closest('.article-expanded').querySelector('h2').textContent;
+        //             this.innerHTML = '<i class="fas fa-check"></i> Saved';
+        //             this.style.backgroundColor = '#4CAF50';
+        //             this.style.color = 'white';
+
+        //             // Reset after 3 seconds
+        //             setTimeout(() => {
+        //                 this.innerHTML = '<i class="fas fa-bookmark"></i> Save';
+        //                 this.style.backgroundColor = '';
+        //                 this.style.color = '';
+        //             }, 3000);
+
+        //             console.log(`Article "${articleTitle}" saved`);
+        //         });
+        //     }
+        // });
+
+        // // Share button functionality
+        // document.querySelectorAll('.action-btn').forEach(button => {
+        //     if (button.textContent.includes('Share') || button.innerHTML.includes('share-alt')) {
+        //         button.addEventListener('click', function () {
+        //             const articleTitle = this.closest('.article-expanded').querySelector('h2').textContent;
+        //             const articleId = this.closest('.article-expanded').id;
+        //             const shareUrl = `${window.location.origin}${window.location.pathname}#${articleId}`;
+
+        //             if (navigator.share) {
+        //                 navigator.share({
+        //                     title: articleTitle,
+        //                     text: `Check out this article about ${articleTitle}`,
+        //                     url: shareUrl
+        //                 });
+        //             } else {
+        //                 // Fallback: Copy to clipboard
+        //                 navigator.clipboard.writeText(shareUrl).then(() => {
+        //                     const originalHTML = this.innerHTML;
+        //                     this.innerHTML = '<i class="fas fa-check"></i> Link Copied';
+        //                     this.style.backgroundColor = '#4CAF50';
+        //                     this.style.color = 'white';
+
+        //                     setTimeout(() => {
+        //                         this.innerHTML = originalHTML;
+        //                         this.style.backgroundColor = '';
+        //                         this.style.color = '';
+        //                     }, 3000);
+        //                 });
+        //             }
+        //         });
+        //     }
+        // });
+
+        // // Scroll to anchor on page load
+        // window.addEventListener('load', function () {
+        //     if (window.location.hash) {
+        //         const targetId = window.location.hash.substring(1);
+        //         const targetElement = document.getElementById(targetId);
+        //         if (targetElement) {
+        //             setTimeout(() => {
+        //                 targetElement.scrollIntoView({ behavior: 'smooth' });
+        //             }, 100);
+        //         }
+        //     }
+        // });
+
+        // // Smooth scroll for navigation links
+        // document.querySelectorAll('.nav-link').forEach(link => {
+        //     link.addEventListener('click', function (e) {
+        //         e.preventDefault();
+        //         const targetId = this.getAttribute('href').substring(1);
+        //         const targetElement = document.getElementById(targetId);
+        //         if (targetElement) {
+        //             targetElement.scrollIntoView({ behavior: 'smooth' });
+        //         }
+        //     });
+        // });
+    </script>
+
+</body>
+
+</html>

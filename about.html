@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml"
+        href="https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/icon.svg?t=20260208" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>About me</title>
+    <base href="/Template_practices/">
+  <script type="module" crossorigin src="/Template_practices/assets/main-CXuJo5Xa.js"></script>
+  <link rel="stylesheet" crossorigin href="/Template_practices/assets/main-CZXhhjxK.css">
+</head>
+
+<body>
+    <div class="simplerHero simplerHero--about">
+        <header class="simplerHero__header">
+            <h1>About me</h1>
+        </header>
+    </div>
+    <!-- 因不会调整active而只能每次手动nav。 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Contents...</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="link.html">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More stories...
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="targets.html">Future targets</a></li>
+                            <li><a class="dropdown-item active" aria-current="page" href="about.html">About me</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="ref_thk.html">References and Acknowledgements</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+                </ul>
+                <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <i>Sorry deepseek, but actually I'm not a</i>
+                    <h1 class="hero-title">Frontend Developer & UI Designer</h1>
+                    <p class="hero-subtitle">I am interested in creating <mark>responsive</mark>, <mark>accessible web
+                            experiences</mark> using
+                        HTML,
+                        SCSS, JavaScript, Bootstrap, and Vite. Passionate about <mark>clean code</mark>, gaming, and
+                        feline
+                        companions (recently).</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#gallery" class="btn btn-primary btn-lg">
+                            <i class="fas fa-images me-2"></i>View My Work
+                        </a>
+                        <a href="#journey" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-history me-2"></i>My Journey
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image mt-5 mt-lg-0">
+                        <div class="code-snippet bg-dark p-4 rounded-3 shadow">
+                            <pre class="text-light m-0"><code class="language-html">
+&lt;!-- My Tech Stack --&gt;
+&lt;div class="skills"&gt;
+  &lt;div class="skill"&gt;HTML5&lt;/div&gt;
+  &lt;div class="skill"&gt;SCSS&lt;/div&gt;
+  &lt;div class="skill"&gt;JavaScript&lt;/div&gt;
+  &lt;div class="skill"&gt;Bootstrap&lt;/div&gt;
+  &lt;div class="skill"&gt;Vite&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title-in-about">My Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3 class="card-title h4">HTML5</h3>
+                            <p class="card-text">Semantic HTML5 markup, accessibility standards, and modern web
+                                structure. Building clean, maintainable code with proper document outline.</p>
+                            <div class="progress mt-3" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 95%; background-color: var(--html-color);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <h3 class="card-title h4">SCSS</h3>
+                            <p class="card-text">Using SCSS for modular, scalable styling with variables, mixins, and
+                                nesting. Creating responsive designs with maintainable CSS architecture.</p>
+                            <div class="progress mt-3" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 90%; background-color: var(--scss-color);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3 class="card-title h4">JavaScript</h3>
+                            <p class="card-text">ES6+ features, DOM manipulation, asynchronous programming with
+                                async/await, and modern JavaScript frameworks. Building interactive user experiences.
+                            </p>
+                            <div class="progress mt-3" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 88%; background-color: var(--js-color);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <h3 class="card-title h4">Bootstrap</h3>
+                            <p class="card-text">Rapid prototyping with Bootstrap's grid system and components.
+                                Customizing themes and creating responsive layouts for all device sizes.</p>
+                            <div class="progress mt-3" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 92%; background-color: var(--bootstrap-color);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="card-title h4">Vite</h3>
+                            <p class="card-text">Fast build tooling and development server. Configuring projects with
+                                hot module replacement and optimized production builds.</p>
+                            <div class="progress mt-3" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 85%; background-color: var(--vite-color);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="card-title h4">UI/UX Design</h3>
+                            <p class="card-text">Creating user-centered designs with focus on usability and aesthetics.
+                                Prototyping, wireframing, and implementing design systems.</p>
+                            <div class="progress mt-3" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 82%; background-color: var(--figma-color);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey Timeline -->
+    <section id="journey" class="timeline-section">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title-in-about">My Learning Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026.02.03 - Started</div>
+                        <h4>HTML & CSS Foundations</h4>
+                        <p>Began my journey with basic HTML and CSS, learning to structure web pages and apply styling.
+                            Created simple static websites to practice layout techniques and responsive design
+                            principles.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026.02.04 - Advanced</div>
+                        <h4>JavaScript & Bootstrap</h4>
+                        <p>Dived into JavaScript for interactivity and DOM manipulation. Learned Bootstrap for rapid
+                            prototyping and responsive design. Built several projects combining these technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026.02.05 - Professional</div>
+                        <h4>SCSS & Build Tools</h4>
+                        <p>Mastered SCSS for more maintainable styling with variables, mixins, and functions. Discovered
+                            Vite for fast development and optimized builds. Started creating more complex applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026.02.05 - Present</div>
+                        <h4>Full Stack Integration</h4>
+                        <p>Currently integrating frontend skills with backend technologies. Focusing on creating
+                            complete web applications with modern workflows, version control, and deployment strategies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Feed Section -->
+    <section id="gallery" class="image-feed-section">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title-in-about">My Image Gallery</h2>
+            <p class="text-center mb-4 text-muted">A visual collection of my projects, interests, and inspirations</p>
+
+            <div class="filter-buttons text-center">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cats">Cats</button>
+                <button class="filter-btn" data-filter="games">Games</button>
+                <button class="filter-btn" data-filter="code">Code</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="image-feed-container" id="imageFeed">
+                <!-- Images will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4 class="footer-heading">About This Portfolio</h4>
+                    <p>This portfolio showcases my skills in frontend development and design. Built with HTML, SCSS,
+                        JavaScript, Bootstrap, and Vite.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-codepen"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#journey">My Journey</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h4 class="footer-heading">Get In Touch</h4>
+                    <p>Interested in collaborating or just want to chat about web development?</p>
+                    <div class="mt-3">
+                        <p><i class="fas fa-envelope me-2"></i>hello@myportfolio.dev</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Based in Digital Space</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 My Portfolio. All rights reserved. | Built with <i class="fas fa-heart text-danger"></i>
+                    and the tools I love.</p>
+            </div>
+        </div>
+    </footer> -->
+    <div id="feet"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            var navbarCollapse = document.querySelector('#navbarSupportedContent');
+
+            if (navbarToggler && navbarCollapse) {
+                // 当折叠区域完全隐藏后，移除按钮焦点
+                navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+                    navbarToggler.blur();
+                });
+
+                // 当折叠区域完全显示后，也可以选择移除焦点
+                navbarCollapse.addEventListener('shown.bs.collapse', function () {
+                    // 如果你希望在展开后也移除焦点，可以取消注释下面这行
+                    // navbarToggler.blur();
+                });
+            }
+        });
+
+        <!-- Custom JavaScript -->
+
+        // Image data for the gallery
+        const imageData = [
+            {
+                id: 1,
+                title: "My Coding Setup",
+                category: "code",
+                description: "My workstation where I spend hours coding and learning new technologies.",
+                color: "var(--primary-blue)"
+            },
+            {
+                id: 2,
+                title: "Whiskers the Tabby",
+                category: "cats",
+                description: "My feline companion who often 'helps' with debugging sessions.",
+                color: "var(--primary-grass)"
+            },
+            {
+                id: 3,
+                title: "Gaming Night",
+                category: "games",
+                description: "My current favorite game - perfect for unwinding after a coding session.",
+                color: "var(--primary-purple)"
+            },
+            {
+                id: 4,
+                title: "SCSS Architecture",
+                category: "code",
+                description: "A clean SCSS file structure I use for maintainable styling.",
+                color: "var(--primary-blue)"
+            },
+            {
+                id: 5,
+                title: "Midnight the Void",
+                category: "cats",
+                description: "The mysterious black cat who owns my keyboard during the night.",
+                color: "var(--primary-grass)"
+            },
+            {
+                id: 6,
+                title: "UI Design System",
+                category: "design",
+                description: "A design system I created with consistent components and color schemes.",
+                color: "var(--primary-green)"
+            },
+            {
+                id: 7,
+                title: "Adventure Game World",
+                category: "games",
+                description: "Exploring virtual worlds for UI inspiration and storytelling ideas.",
+                color: "var(--primary-purple)"
+            },
+            {
+                id: 8,
+                title: "Vite Configuration",
+                category: "code",
+                description: "My optimized Vite config for fast development and production builds.",
+                color: "var(--primary-blue)"
+            },
+            {
+                id: 9,
+                title: "Grey Tabby Nap",
+                category: "cats",
+                description: "Even cats need breaks - this one knows how to relax in style.",
+                color: "var(--primary-grass)"
+            },
+            {
+                id: 10,
+                title: "Retro Game Collection",
+                category: "games",
+                description: "Classic games that inspire my love for pixel art and simple interfaces.",
+                color: "var(--primary-purple)"
+            },
+            {
+                id: 11,
+                title: "Bootstrap Component",
+                category: "design",
+                description: "A custom Bootstrap component I designed with enhanced functionality.",
+                color: "var(--primary-green)"
+            },
+            {
+                id: 12,
+                title: "JavaScript Project",
+                category: "code",
+                description: "A complex JavaScript application with interactive features and API integration.",
+                color: "var(--primary-blue)"
+            }
+        ];
+
+        // Placeholder image URLs (you would replace these with your actual images)
+        const placeholderImages = {
+            cats: [
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/cats/catinbed.jpg",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/cats/catworm.jpg",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/cats/gamecat.jpg",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/cats/patcat.jpg"
+            ],
+            games: [
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/game/goodwater.jpg",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/game/jumpwater.jpg",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/game/gamebattery.jpg"
+            ],
+            code: [
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/code/flies.png",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/code/helloworld.png",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/code/deepseek.png",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/code/npmrundev.png"
+            ],
+            design: [
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/design/exportassvg.png",
+                "https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/design/themecolor.png"
+            ]
+        };
+
+        // Function to get a random image from a category
+        function getRandomImage(category) {
+            const images = placeholderImages[category];
+            if (images && images.length > 0) {
+                return images[Math.floor(Math.random() * images.length)];
+            }
+            // Fallback image if category not found
+            return "./src/javascript.svg";
+        }
+
+        // Function to render images
+        function renderImages(filter = 'all') {
+            const container = document.getElementById('imageFeed');
+            container.innerHTML = '';
+
+            const filteredData = filter === 'all'
+                ? imageData
+                : imageData.filter(item => item.category === filter);
+
+            filteredData.forEach(item => {
+                const imageUrl = getRandomImage(item.category);
+
+                const imageElement = document.createElement('div');
+                imageElement.className = 'feed-item';
+                imageElement.setAttribute('data-category', item.category);
+
+                imageElement.innerHTML = `
+                    <img src="${imageUrl}" alt="${item.title}" class="feed-img">
+                    <div class="feed-content">
+                        <span class="feed-category category-${item.category}">${item.category.charAt(0).toUpperCase() + item.category.slice(1)}</span>
+                        <h3 class="feed-title">${item.title}</h3>
+                        <p class="feed-description">${item.description}</p>
+                    </div>
+                `;
+
+                container.appendChild(imageElement);
+            });
+        }
+
+        // Initialize the gallery
+        document.addEventListener('DOMContentLoaded', function () {
+            // Render initial images
+            renderImages();
+
+            // Add filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter images
+                    const filter = this.getAttribute('data-filter');
+                    renderImages(filter);
+                });
+            });
+
+            // // Smooth scrolling for navigation links
+            // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            //     anchor.addEventListener('click', function (e) {
+            //         e.preventDefault();
+
+            //         const targetId = this.getAttribute('href');
+            //         if (targetId === '#') return;
+
+            //         const targetElement = document.querySelector(targetId);
+            //         if (targetElement) {
+            //             window.scrollTo({
+            //                 top: targetElement.offsetTop - 80,
+            //                 behavior: 'smooth'
+            //             });
+
+            //             // Update active nav link
+            //             document.querySelectorAll('.nav-link').forEach(link => {
+            //                 link.classList.remove('active');
+            //             });
+            //             this.classList.add('active');
+            //         }
+            //     });
+            // });
+
+            // // Navbar background on scroll
+            // window.addEventListener('scroll', function () {
+            //     const navbar = document.querySelector('.navbar');
+            //     if (window.scrollY > 50) {
+            //         navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+            //         navbar.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.08)';
+            //     } else {
+            //         navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+            //         navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.08)';
+            //     }
+            // });
+        });
+    </script>
+
+</body>
+
+</html>
