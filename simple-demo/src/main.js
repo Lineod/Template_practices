@@ -1,5 +1,8 @@
 import './styles/main.scss';
 console.log('Styles loaded!');
+
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 // document.querySelector('#heads').innerHTML = `<head>
 //     <meta charset="UTF-8" />
 //     <link rel="icon" type="image/svg+xml"

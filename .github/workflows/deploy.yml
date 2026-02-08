@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  paths:
+      - 'simple-demo/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'simple-demo/package-lock.json'
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./simple-demo  # 重要！指定项目文件夹
+
+      - name: Build
+        run: npm run build
+        working-directory: ./simple-demo
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .../simple-demo/dist  # 构建输出路径
+          destination_dir: ./simple-demo # 可选：将构建文件放在 gh-pages 分支的 simple-demo 子目录中

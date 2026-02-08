@@ -4,12 +4,19 @@ export default defineConfig({
     // 基础配置
     root: '.',
     publicDir: 'public',
-
+    base: "/Template_practices/",
     // 构建配置
     build: {
         outDir: 'dist',
         assetsDir: 'assets',
-        sourcemap: true
+        sourcemap: true,
+        // rollupOptions: {
+        //     output: {
+        //         assetFileNames: 'assets/[name]-[hash][extname]',
+        //         chunkFileNames: 'assets/[name]-[hash].js',
+        //         entryFileNames: 'assets/[name]-[hash].js'
+        //     }
+        // }
     },
 
     // CSS 预处理配置
