@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import path from 'path'
 
 export default defineConfig({
     // 基础配置
@@ -13,11 +14,11 @@ export default defineConfig({
         copyPublicDir: true,
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'index.html'),
-                about: resolve(__dirname, 'about.html'),
-                news: resolve(__dirname, 'link.html'),
-                ref_thx: resolve(__dirname, 'ref_thk.html'),
-                targets: resolve(__dirname, 'targets.html')
+                main: path.resolve(__dirname, 'index.html'),
+                about: path.resolve(__dirname, 'about.html'),
+                news: path.resolve(__dirname, 'link.html'),
+                ref_thx: path.resolve(__dirname, 'ref_thk.html'),
+                targets: path.resolve(__dirname, 'targets.html')
                 // 添加您所有的 HTML 文件
             }
         },
