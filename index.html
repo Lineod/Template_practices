@@ -418,8 +418,6 @@
       this.style.pointerEvents = 'none';
       this.style.cursor = 'default';
     });
-  </script>
-  <script>
     document.addEventListener('DOMContentLoaded', function () {
       var navbarToggler = document.querySelector('.navbar-toggler');
       var navbarCollapse = document.querySelector('#navbarSupportedContent');
@@ -437,6 +435,12 @@
         });
       }
     });
+    const redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+
+    if (redirect && redirect !== window.location.pathname) {
+      history.replaceState(null, null, redirect);
+    }
   </script>
 </body>
 
