@@ -1,0 +1,386 @@
+:root {
+    --primary-dark: #242424;
+    --primary-light-bg: #f4f7fb;
+    --primary-green: #058457;
+    --primary-purple: #4404aa;
+    --primary-blue: #044caa;
+    --primary-lake: #057e84;
+    --primary-grass: #a0d137;
+    --primary-navy: #212529;
+    --primary-grey: #dee0e1;
+    --string-darkGrey: #7f8c8d;
+    --string-lightGrey: #95a5a6;
+
+    /* Tool-specific colors from your CSS */
+    --html-color: #e34c26;
+    --scss-color: #cc6699;
+    --js-color: #f7df1e;
+    --bootstrap-color: #7952b3;
+    --vite-color: #646cff;
+    --figma-color: #f24e1e;
+
+    --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-dark);
+    line-height: 1.6;
+    background-color: var(--primary-light-bg);
+    padding-top: 0;
+    /* No navbar in this section */
+}
+
+/* References Section */
+.references-section {
+    padding: 80px 0 60px;
+    background-color: white;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    color: var(--primary-dark);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-grass);
+    border-radius: 2px;
+}
+
+.acknowledgement-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 30px;
+    height: 100%;
+    transition: var(--transition);
+    border-top: 4px solid var(--primary-lake);
+    margin-bottom: 30px;
+}
+
+.acknowledgement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.ack-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: white;
+
+    i {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+.icon-w3schools {
+    background: linear-gradient(135deg, #04aa6d 0%, #059862 100%);
+}
+
+.icon-deepseek {
+    background: linear-gradient(135deg, #044caa 0%, #033d8b 100%);
+}
+
+.icon-self {
+    background: linear-gradient(135deg, #a0d137 0%, #8bb82a 100%);
+}
+
+.ack-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--primary-dark);
+    font-size: 1.4rem;
+}
+
+.ack-content {
+    color: var(--string-darkGrey);
+    margin-bottom: 0;
+}
+
+/* Learning Journey Compact */
+.journey-compact {
+    padding: 60px 0;
+    background-color: var(--primary-light-bg);
+}
+
+.journey-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 25px;
+    height: 100%;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-purple);
+}
+
+.journey-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--primary-grey);
+}
+
+.journey-step:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--primary-purple);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.step-content h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--primary-dark);
+}
+
+.step-content p {
+    color: var(--string-darkGrey);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Personal Reflection */
+.reflection-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.reflection-box {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 30px;
+    border-left: 4px solid var(--primary-grass);
+    position: relative;
+    overflow: hidden;
+}
+
+.reflection-box::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 120px;
+    color: rgba(160, 209, 55, 0.1);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.reflection-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.reflection-author {
+    font-weight: 600;
+    color: var(--primary-blue);
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer with colored tool icons */
+.footer {
+    background-color: var(--primary-navy);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-heading {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-links a {
+    color: var(--primary-grey);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer .row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tool-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tool-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.3rem;
+    color: white;
+    transition: var(--transition);
+
+    /* 确保内容居中 */
+    text-align: center;
+
+    /* 解决 Font Awesome 图标的常见问题 */
+    i,
+    svg,
+    b,
+    span {
+        display: block;
+        /* 或 inline-block */
+        line-height: 1;
+        /* 防止行高影响 */
+        margin: 0 auto;
+        /* 水平居中 */
+    }
+}
+
+@media (max-width: 991px) {
+    .footer .row {
+        justify-content: center;
+    }
+
+    .footer .row>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tool-icons {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer .row {
+        justify-content: center;
+    }
+}
+
+.tool-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.tool-html {
+    background: linear-gradient(135deg, #e34c26 0%, #c44721 100%);
+}
+
+.tool-scss {
+    background: linear-gradient(135deg, #cc6699 0%, #b35989 100%);
+}
+
+.tool-js {
+    background: linear-gradient(135deg, #f7df1e 0%, #d8c91d 100%);
+    color: #333;
+}
+
+.tool-bootstrap {
+    background: linear-gradient(135deg, #7952b3 0%, #6a48a0 100%);
+}
+
+.tool-vite {
+    background: linear-gradient(135deg, #646cff 0%, #5a62e5 100%);
+}
+
+.tool-figma {
+    background: linear-gradient(135deg, #f24e1e 0%, #d9451a 100%);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: var(--string-lightGrey);
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .references-section {
+        padding: 60px 0 40px;
+    }
+
+    .journey-step {
+        flex-direction: column;
+    }
+
+    .step-number {
+        margin-bottom: 10px;
+    }
+
+    .tool-icons {
+        justify-content: center;
+    }
+}
+
+// /* Custom scrollbar */
+// ::-webkit-scrollbar {
+//     width: 8px;
+// }
+
+// ::-webkit-scrollbar-track {
+//     background: var(--primary-light-bg);
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background: var(--primary-blue);
+//     border-radius: 4px;
+// }

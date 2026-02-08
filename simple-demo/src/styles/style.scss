@@ -12,7 +12,7 @@ $string_lightGrey: #95a5a6;
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -66,13 +66,22 @@ body {
 
 .simplerHero {
   &__header {
+    position: relative;
     color: $primary_navy;
     padding: 40px 20px;
     text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
 
     h1 {
+      color: #ffffff;
       font-size: 2rem;
-      margin: 0;
+      margin-left: 20px;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 
@@ -80,15 +89,27 @@ body {
     .simplerHero__header {
       background-image: url("https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/Template_practice/img/news_bg_cut.jpg");
       width: 100%;
-      height: 120px; // 或 min-height: 300px;
+      height: 100px; // 或 min-height: 300px;
       overflow: hidden;
       position: relative;
-      padding: 40px 20px;
-      text-align: left;
+      padding: 30px 20px;
     }
 
-    h1 {
-      color: #ffffff;
+    h1,
+    p {
+      z-index: 2;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-color: rgba(0, 0, 0, 0.5); // 黑色，50%透明度
+      // 或者使用其他颜色，比如深蓝色遮罩：rgba(0, 10, 20, 0.6)
+      z-index: 1; // 确保遮罩在背景之上，但在内容之下
     }
 
   }
@@ -236,11 +257,12 @@ section {
   color: $primary_green;
   background-color: $primary_light_bg;
   text-align: right;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-self: flex-end;
   transition: all 1.0s ease;
   // padding: 10px 15px;
   cursor: pointer;
+  padding: 4px;
 
   &:hover {
     background-color: $primary_green;
@@ -266,7 +288,7 @@ section {
   display: none;
   width: 100%; // 内容区域宽度与容器一致
   margin-top: 15px;
-  padding: 15px;
+  padding: 4px;
   border: 2px solid $primary_grey;
   border-radius: 8px;
   text-align: left;
@@ -611,7 +633,7 @@ article {
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #4f6df5;
+  background-color: $primary_lake;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -624,7 +646,8 @@ article {
   z-index: 100;
 
   &:hover {
-    background-color: #3a56d5;
+    background-color: $primary_grass;
+    color: $primary_dark;
     transform: translateY(-5px);
   }
 }
