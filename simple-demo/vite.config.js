@@ -10,6 +10,7 @@ export default defineConfig({
         outDir: 'dist',
         assetsDir: 'assets',
         sourcemap: true,
+        copyPublicDir: true
         // rollupOptions: {
         //     output: {
         //         assetFileNames: 'assets/[name]-[hash][extname]',
